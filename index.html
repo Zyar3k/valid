@@ -6,26 +6,28 @@
   <title>Page Title</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <!-- <script src='main.js'></script> -->
 </head>
 <body>
   
-  <form action="">
+  <form action="" novalidate>
     <div class="inputWrap">
       <label for="name">Name</label>
       <input id="name" type="text" name="name" required minlength="3">
+      <p class="name"></p>
     </div>
-
+    
     <div class="inputWrap">
       <label for="age">Age</label>
       <input id="age" type="number" name="age" required min="18">
+      <p class="age"></p>
     </div>
-
+    
     <div class="inputWrap">
       <label for="textarea">Notes</label>
       <textarea name="textarea" id="textarea" cols="30" rows="10" required minlength="9"></textarea>
+      <p class="textarea"></p>
     </div>
-
+    
     <div class="inputWrap">
       <label for="select">Check it</label>
       <select id="select" required>
@@ -34,25 +36,28 @@
         <option value="kebab">kebab</option>
         <option value="hamburger">hamburger</option>
       </select>
+      <p class="select"></p>
     </div>
-
+    
     <div class="inputWrap">
       <label for="radio">your choice</label>
       <input id="radio" type="radio" name="radio" required>
       <input id="radio1" type="radio" name="radio">
+      <p class="radio"></p>
     </div>
-
+    
     <div class="inputWrap">
       <label for="policy">Policy</label>
       <input id="policy" type="checkbox" name="policy" required>
+      <p class="policy"></p>
     </div>
-
-    <br><br><br><br>
-    <button type="submit">submit</button>
+    
+    <button type="submit" id="submit">submit</button>
     <button type="reset">reset</button>
-
-
+    
+    
   </form>
   
+  <script src='main.js'></script>
 </body>
 </html>

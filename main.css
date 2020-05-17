@@ -15,6 +15,10 @@ body {
   color: #f3f3f3;
 }
 
+form {
+  background: #021B79;
+}
+
 .inputWrap {
   display: flex;
   flex-direction: column;
@@ -24,7 +28,16 @@ input:invalid,
 textarea:invalid {
   color: red;
 }
+
 input:valid,
 textarea:valid {
   color: green;
+}
+
+p {
+  margin-top: 4px;
+  height: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: tomato;
 }
