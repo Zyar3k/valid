@@ -3,33 +3,29 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Page Title</title>
+  <title>Form</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
-  
   <form action="" novalidate>
     <div class="inputWrap">
       <label for="name">Name</label>
       <input id="name" type="text" name="name" required minlength="3">
       <p class="name"></p>
     </div>
-    
     <div class="inputWrap">
       <label for="age">Age</label>
       <input id="age" type="number" name="age" required min="18">
       <p class="age"></p>
     </div>
-    
     <div class="inputWrap">
       <label for="textarea">Notes</label>
-      <textarea name="textarea" id="textarea" cols="30" rows="10" required minlength="9"></textarea>
+      <textarea name="textarea" id="textarea" cols="30" rows="4" required minlength="9"></textarea>
       <p class="textarea"></p>
     </div>
-    
     <div class="inputWrap">
-      <label for="select">Check it</label>
+      <label for="select">Favourite food</label>
       <select id="select" required>
         <option value=""></option>
         <option value="pizza">pizza</option>
@@ -38,26 +34,31 @@
       </select>
       <p class="select"></p>
     </div>
-    
     <div class="inputWrap">
-      <label for="radio">your choice</label>
-      <input id="radio" type="radio" name="radio" required>
-      <input id="radio1" type="radio" name="radio">
+      <label for="">favorite animals</label>
+      <span>
+        <label for="radio">Dogs</label>
+        <input id="radio" type="radio" name="radio" required>
+      </span>
+      <span>
+        <label for="radio1">Cats</label>
+        <input id="radio1" type="radio" name="radio">
+      </span>
       <p class="radio"></p>
     </div>
-    
     <div class="inputWrap">
       <label for="policy">Policy</label>
-      <input id="policy" type="checkbox" name="policy" required>
+      <span class="wrapPolicy">
+        <input id="policy" type="checkbox" name="policy" required>
+        <h6>serve and help</h6>
+      </span>
       <p class="policy"></p>
     </div>
-    
-    <button type="submit" id="submit">submit</button>
-    <button type="reset">reset</button>
-    
-    
+    <span class="btns">
+      <button type="submit" id="submit">submit</button>
+      <button type="reset">reset</button>
+    </span>
   </form>
-  
   <script src='main.js'></script>
 </body>
 </html>

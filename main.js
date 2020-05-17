@@ -15,7 +15,6 @@ const p4policy = document.querySelector('p.policy');
 
 
 document.querySelector('#submit').addEventListener('click', (e) => {
-
   e.preventDefault()
 
   if (name.value === '') {
@@ -49,13 +48,13 @@ document.querySelector('#submit').addEventListener('click', (e) => {
   }
 
   if(select.value === ''){
-    p4select.innerHTML = 'you must choose';
+    p4select.innerHTML = 'You have to choose';
   } else {
     p4select.innerHTML = '';
   }
 
   if (radio.checked !== true && radio1.checked !== true) {
-    p4radio.innerHTML='you must choose';
+    p4radio.innerHTML='You have to choose';
   } else {
     p4radio.innerHTML='';
   }
@@ -64,6 +63,5 @@ document.querySelector('#submit').addEventListener('click', (e) => {
     p4policy.innerHTML = 'Please accept our policy';
   } else {
     p4policy.innerHTML = '';
-  }
-  
+  }  
 });
