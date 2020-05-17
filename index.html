@@ -9,8 +9,49 @@
   <script src='main.js'></script>
 </head>
 <body>
-  <h1>
-    hello world
-  </h1>
+  
+  <form action="">
+    <div class="inputWrap">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name">
+    </div>
+
+    <div class="inputWrap">
+      <label for="age">Age</label>
+      <input id="age" type="number" name="age">
+    </div>
+
+    <div class="inputWrap">
+      <label for="textarea">Notes</label>
+      <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    </div>
+
+    <div class="inputWrap">
+      <label for="select">Check it</label>
+      <select id="select">
+        <option value="pizza">pizza</option>
+        <option value="kebab">kebab</option>
+        <option value="hamburger">hamburger</option>
+      </select>
+    </div>
+
+    <div class="inputWrap">
+      <label for="radio">your choice</label>
+      <input id="radio" type="radio" name="radio">
+      <input id="radio1" type="radio" name="radio">
+    </div>
+
+    <div class="inputWrap">
+      <label for="policy">Policy</label>
+      <input id="policy" type="checkbox" name="policy">
+    </div>
+    
+    <br><br><br><br>
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+
+
+  </form>
+  
 </body>
 </html>
